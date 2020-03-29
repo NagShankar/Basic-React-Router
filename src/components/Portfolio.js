@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 
-const Portfolio = () => (
+const Portfolio = ({match}) => (
 <div>
    <h1>Portfolio</h1>
     <p>Information about few riders of HRC</p>
-    <Link to="/portfolio/93" className="sublink">Marc Marquez</Link>
-    <Link to="/portfolio/35" className="sublink">Cal Cruthlow</Link>
+    <Link to={`${match.url}/93`} className="sublink">Marc Marquez</Link>
+    <Link to={`${match.url}/35`} className="sublink">Cal Cruthlow</Link>
     
     
     
